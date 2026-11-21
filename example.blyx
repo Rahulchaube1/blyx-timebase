@@ -1,0 +1,14 @@
+use timebase;
+
+fn main() {
+    let tick = 45.0;
+    let numerator = 1.0;
+    let denominator = 30.0;
+    let result = timebase_frame(tick, numerator, denominator);
+    if len(result) == 0 { println!("invalid"); return; }
+    let mut i = 0;
+    while i < len(result) {
+        println!(at(result, i));
+        i += 1;
+    }
+}
